@@ -1,0 +1,54 @@
+,State,Year,Month,Period,Indicator,Data Value,Percent Complete,Percent Pending Investigation,State Name,Footnote,Footnote Symbol,Predicted Value
+0,AK,2019,January,12 month-ending,Number of Drug Overdose Deaths,107,100,0.0,Alaska,Underreported due to incomplete data.,*,107
+1,AL,2019,January,12 month-ending,Number of Drug Overdose Deaths,724,100,0.169414094,Alabama,Underreported due to incomplete data.,*,732
+2,AR,2019,January,12 month-ending,Number of Drug Overdose Deaths,439,100,0.066759919,Arkansas,Underreported due to incomplete data.,*,439
+3,AZ,2019,January,12 month-ending,Number of Drug Overdose Deaths,1725,100,0.122604592,Arizona,Underreported due to incomplete data.,*,"1,734"
+4,CA,2019,January,12 month-ending,Number of Drug Overdose Deaths,5515,100,0.24349339899999997,California,Underreported due to incomplete data.,*,"5,623"
+5,CO,2019,January,12 month-ending,Number of Drug Overdose Deaths,992,100,0.033324789,Colorado,Underreported due to incomplete data.,*,992
+6,CT,2019,January,12 month-ending,Number of Drug Overdose Deaths,1087,100,0.05761659400000001,Connecticut,Underreported due to incomplete data.,*,"1,087"
+7,DC,2019,January,12 month-ending,Number of Drug Overdose Deaths,300,100,0.032889327,District of Columbia,Underreported due to incomplete data.,*,300
+8,DE,2019,January,12 month-ending,Number of Drug Overdose Deaths,403,100,0.0,Delaware,Underreported due to incomplete data.,*,403
+9,FL,2019,January,12 month-ending,Number of Drug Overdose Deaths,4921,100,0.049001533,Florida,Underreported due to incomplete data.,*,"4,921"
+10,GA,2019,January,12 month-ending,Number of Drug Overdose Deaths,1384,100,0.090880121,Georgia,Underreported due to incomplete data.,*,"1,386"
+11,HI,2019,January,12 month-ending,Number of Drug Overdose Deaths,223,100,0.121485595,Hawaii,Underreported due to incomplete data.,*,225
+12,IA,2019,January,12 month-ending,Number of Drug Overdose Deaths,278,100,0.00999001,Iowa,Underreported due to incomplete data.,*,278
+13,ID,2019,January,12 month-ending,Number of Drug Overdose Deaths,249,100,0.021349273999999998,Idaho,Underreported due to incomplete data.,*,249
+14,IL,2019,January,12 month-ending,Number of Drug Overdose Deaths,2687,100,0.07881867,Illinois,Underreported due to incomplete data.,*,"2,687"
+15,IN,2019,January,12 month-ending,Number of Drug Overdose Deaths,1591,100,0.007657201999999999,Indiana,Underreported due to incomplete data.,*,"1,591"
+16,KS,2019,January,12 month-ending,Number of Drug Overdose Deaths,348,100,0.011415525,Kansas,Underreported due to incomplete data.,*,348
+17,KY,2019,January,12 month-ending,Number of Drug Overdose Deaths,1339,100,0.016729402,Kentucky,Underreported due to incomplete data.,*,"1,339"
+18,LA,2019,January,12 month-ending,Number of Drug Overdose Deaths,1162,100,0.00219901,Louisiana,Underreported due to incomplete data.,*,"1,162"
+19,MA,2019,January,12 month-ending,Number of Drug Overdose Deaths,2212,100,0.16066138900000002,Massachusetts,Underreported due to incomplete data.,*,"2,233"
+20,MD,2019,January,12 month-ending,Number of Drug Overdose Deaths,2392,100,0.038063947,Maryland,Underreported due to incomplete data.,*,"2,392"
+21,ME,2019,January,12 month-ending,Number of Drug Overdose Deaths,324,100,0.0,Maine,Underreported due to incomplete data.,*,324
+22,MI,2019,January,12 month-ending,Number of Drug Overdose Deaths,2513,100,0.10860683300000001,Michigan,Underreported due to incomplete data.,*,"2,521"
+23,MN,2019,January,12 month-ending,Number of Drug Overdose Deaths,665,100,0.0,Minnesota,Underreported due to incomplete data.,*,665
+24,MO,2019,January,12 month-ending,Number of Drug Overdose Deaths,1664,100,0.017080745,Missouri,Underreported due to incomplete data.,*,"1,664"
+25,MS,2019,January,12 month-ending,Number of Drug Overdose Deaths,288,100,0.706532211,Mississippi,Underreported due to incomplete data.,*,312
+26,MT,2019,January,12 month-ending,Number of Drug Overdose Deaths,120,100,0.019829467,Montana,Underreported due to incomplete data.,*,120
+27,NC,2019,January,12 month-ending,Number of Drug Overdose Deaths,2225,100,0.305950579,North Carolina,Underreported due to incomplete data.,*,"2,286"
+28,ND,2019,January,12 month-ending,Number of Drug Overdose Deaths,63,100,0.085959885,North Dakota,Underreported due to incomplete data.,*,64
+29,NE,2019,January,12 month-ending,Number of Drug Overdose Deaths,147,100,0.029220969,Nebraska,Underreported due to incomplete data.,*,147
+30,NH,2019,January,12 month-ending,Number of Drug Overdose Deaths,446,100,0.040099447,New Hampshire,Underreported due to incomplete data.,*,446
+31,NJ,2019,January,12 month-ending,Number of Drug Overdose Deaths,2819,100,0.201946767,New Jersey,Underreported due to incomplete data.,*,"2,860"
+32,NM,2019,January,12 month-ending,Number of Drug Overdose Deaths,513,100,0.22157371399999998,New Mexico,Underreported due to incomplete data.,*,522
+33,NV,2019,January,12 month-ending,Number of Drug Overdose Deaths,752,100,0.24425796800000002,Nevada,Underreported due to incomplete data.,*,767
+34,NY,2019,January,12 month-ending,Number of Drug Overdose Deaths,2144,100,0.490849169,New York,Underreported due to incomplete data.,*,"2,254"
+35,OH,2019,January,12 month-ending,Number of Drug Overdose Deaths,4036,100,0.016234952,Ohio,Underreported due to incomplete data.,*,"4,036"
+36,OK,2019,January,12 month-ending,Number of Drug Overdose Deaths,675,100,0.073791349,Oklahoma,Underreported due to incomplete data.,*,675
+37,OR,2019,January,12 month-ending,Number of Drug Overdose Deaths,547,100,0.058344678,Oregon,Underreported due to incomplete data.,*,547
+38,PA,2019,January,12 month-ending,Number of Drug Overdose Deaths,4403,100,0.19482924699999998,Pennsylvania,Underreported due to incomplete data.,*,"4,463"
+39,RI,2019,January,12 month-ending,Number of Drug Overdose Deaths,344,100,0.0,Rhode Island,Underreported due to incomplete data.,*,344
+40,SC,2019,January,12 month-ending,Number of Drug Overdose Deaths,1116,100,0.07951232400000001,South Carolina,Underreported due to incomplete data.,*,"1,116"
+41,SD,2019,January,12 month-ending,Number of Drug Overdose Deaths,56,100,0.0,South Dakota,Underreported due to incomplete data.,*,56
+42,TN,2019,January,12 month-ending,Number of Drug Overdose Deaths,1881,100,0.437159949,Tennessee,Underreported due to incomplete data.,*,"1,964"
+43,TX,2019,January,12 month-ending,Number of Drug Overdose Deaths,2968,100,0.211537985,Texas,Underreported due to incomplete data.,*,"3,015"
+44,US,2019,January,12 month-ending,Number of Drug Overdose Deaths,67697,100,0.14564075199999998,United States,Underreported due to incomplete data.,*,"68,211"
+45,UT,2019,January,12 month-ending,Number of Drug Overdose Deaths,634,100,0.15234292900000002,Utah,Underreported due to incomplete data.,*,640
+46,VA,2019,January,12 month-ending,Number of Drug Overdose Deaths,1464,100,0.01474861,Virginia,Underreported due to incomplete data.,*,"1,464"
+47,VT,2019,January,12 month-ending,Number of Drug Overdose Deaths,147,100,0.0,Vermont,Underreported due to incomplete data.,*,147
+48,WA,2019,January,12 month-ending,Number of Drug Overdose Deaths,1181,100,0.142743854,Washington,Underreported due to incomplete data.,*,"1,190"
+49,WI,2019,January,12 month-ending,Number of Drug Overdose Deaths,1081,100,0.088517242,Wisconsin,Underreported due to incomplete data.,*,"1,082"
+50,WV,2019,January,12 month-ending,Number of Drug Overdose Deaths,887,100,0.5259900989999999,West Virginia,Underreported due to incomplete data.,*,937
+51,WY,2019,January,12 month-ending,Number of Drug Overdose Deaths,60,100,0.06458557599999999,Wyoming,Underreported due to incomplete data.,*,60
+52,YC,2019,January,12 month-ending,Number of Drug Overdose Deaths,1456,100,0.055038802000000005,New York City,Underreported due to incomplete data.,*,"1,456"
