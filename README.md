@@ -145,6 +145,7 @@ Other visualizations included a scatterplot illustrating the relationships betwe
 - Shelly Fischer
 - David Fried
 - Chioma Maduko
+- Gianni Adamo
 
 
 ## Rock on!
