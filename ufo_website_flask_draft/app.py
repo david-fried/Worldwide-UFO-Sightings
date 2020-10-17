@@ -1,73 +1,39 @@
 from flask import Flask, render_template, redirect, jsonify, request
-from matplotlib import style
-style.use('fivethirtyeight')
-import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 import datetime as dt
 import sqlalchemy
 import pandas as pd
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, func, inspect
-from scipy.stats import ttest_ind
-import sqlite3
+from sqlalchemy import create_engine
 
-# Creating a SQL Alchemy ORM
+
+# creating a SQL Alchemy ORM
 engine = create_engine("sqlite:///database/database.sqlite")
 Base = automap_base()
 Base.prepare(engine, reflect=True)
+
 
 # table names
 ufo_data = Base.classes.ufo_data
 state_stats = Base.classes.state_stats
 merge_again = Base.classes.merge_again
 
-# should print table names
-print(Base.classes.keys())
-
 app = Flask(__name__)
+
+
+########Home Page###########
 
 @app.route("/")
 def welcome():
-  
-    session = Session(engine)
-
-    from flask import jsonify
-
-    results = session.query(ufo_data.latitude, ufo_data.longitude).all()
-
-    session.close()
-
-    big_list = []
-    for result in results:
-        obj = { "latitude": result[0], "longitude": result[1]}
-        big_list.append(obj)
-    
     return render_template('index.html')
     #return render_template('index.html', data=big_list)
 
 
+########Heatmap###########
+
 @app.route("/heatmap")
 def heatmap():
-  
-    session = Session(engine)
-
-    from flask import jsonify
-
-    results = session.query(ufo_data.latitude, ufo_data.longitude).all()
-
-    session.close()
-
-    big_list = []
-    for result in results:
-        obj = { "latitude": result[0], "longitude": result[1]}
-        big_list.append(obj)
-    
-    # #debug
-    # print(big_list[0:10])
-
-    
     return render_template('heat.html')
 
 
@@ -86,31 +52,16 @@ def heatmapdata():
     for result in results:
         obj = { "latitude": result[0], "longitude": result[1]}
         big_list.append(obj)
-    
-    # #debug
-    # print(big_list[0:10])
 
     data=jsonify(big_list)
     
     return data
 
+
+########Drug Deaths & UFO Sightings###########
+
 @app.route("/drugs")
 def drugs():
-  
-    session = Session(engine)
-
-    from flask import jsonify
-
-    results = session.query(ufo_data.datetime, ufo_data.state, ufo_data.city, ufo_data.shape, ufo_data.duration, ufo_data.comments).order_by(ufo_data.state.asc()).all()
-
-    session.close()
-
-    big_list = []
-    for result in results:
-        dresults = {}
-        dresults[result[0]] = { "state": result[1], "city": result[2], "sighting_shape": result[3], "sighting_duration": result[4], "comments": result[5]}
-        big_list.append(dresults)
-    
     return render_template('drugs.html')
 
 
@@ -122,7 +73,7 @@ def drugsdata1():
     from flask import jsonify
 
     results = session.query(state_stats.name, state_stats.sightings,\
-        state_stats.drug_deaths).all()
+    state_stats.drug_deaths).all()
 
     session.close()
 
@@ -138,7 +89,7 @@ def drugsdata1():
 
 @app.route('/drugsdata2')
 def drugsdata2():
-  
+
     session = Session(engine)
 
     from flask import jsonify
@@ -172,23 +123,10 @@ def drugsdata2():
     return data
 
 
+########D3 Visualization###########
+
 @app.route("/d3")
 def d3():
-  
-    session = Session(engine)
-
-    from flask import jsonify
-
-    results = session.query(ufo_data.datetime, ufo_data.state, ufo_data.city, ufo_data.shape, ufo_data.duration, ufo_data.comments).order_by(ufo_data.state.asc()).all()
-
-    session.close()
-
-    big_list = []
-    for result in results:
-        dresults = {}
-        dresults[result[0]] = { "state": result[1], "city": result[2], "sighting_shape": result[3], "sighting_duration": result[4], "comments": result[5]}
-        big_list.append(dresults)
-    
     return render_template('d3.html')
 
 
@@ -233,23 +171,10 @@ def d3data():
     return data
 
 
+########Explore Data###########
+
 @app.route("/explore")
 def explore():
-  
-    session = Session(engine)
-
-    from flask import jsonify
-
-    results = session.query(ufo_data.datetime, ufo_data.state, ufo_data.city, ufo_data.shape, ufo_data.duration, ufo_data.comments).order_by(ufo_data.state.asc()).all()
-
-    session.close()
-
-    big_list = []
-    for result in results:
-        dresults = {}
-        dresults[result[0]] = { "state": result[1], "city": result[2], "sighting_shape": result[3], "sighting_duration": result[4], "comments": result[5]}
-        big_list.append(dresults)
-    
     return render_template('explore.html')
 
 
@@ -278,9 +203,8 @@ def exploredata():
 
     session.close()
 
-    print(results[0:10])
-
     data=jsonify(results)
+
     return data
 
 
