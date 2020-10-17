@@ -36,19 +36,19 @@ d3.json('http://127.0.0.1:5000/exploredata', function(ufoData){
       filteredData = ufoData;
 
       if (inputState !== "") {
-        var filteredData = filteredData.filter(obj=>obj.state === inputState);
+        var filteredData = filteredData.filter(obj=>obj[2] === inputState);
       }
 
       if (inputCity !== "") {
-        var filteredData = filteredData.filter(obj=>obj.city === inputCity);
+        var filteredData = filteredData.filter(obj=>obj[1] === inputCity);
       }
       
       if (inputCountry !== "") {
-        var filteredData = filteredData.filter(obj=>obj.country === inputCountry);
+        var filteredData = filteredData.filter(obj=>obj[3] === inputCountry);
       }
 
       if (inputShape !== "") {
-        var filteredData = filteredData.filter(obj=>obj.shape === inputShape);
+        var filteredData = filteredData.filter(obj=>obj[4] === inputShape);
       }
       
       createTable(filteredData);
