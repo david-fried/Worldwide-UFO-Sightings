@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    body {
+      background-color: blue;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;}
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node--leaf {
+  fill: #9ff4b5;
+}
+
+.label {
+  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+
+</style>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>D3Times</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+</head>
+
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="/">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Interesting Observations
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarNavDropdown">
+          <a class="dropdown-item" href="/heatmap">Sighting Heat Map</a>
+          <a class="dropdown-item" href="/drugs">Sightings and Drugs</a>
+          <a class="dropdown-item" href="/d3">Fireball Sightings and Drugs</a>
+          <a class="dropdown-item" href="/circlepack">Zoomable Language Clusters</a>
+          <a class="dropdown-item" href="/bar">Bar Chart</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/explore">Explore the Data</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>Zoomable Circle Packing</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div class="chart"> 
+        <div id="circlepack">
+          <!-- We append our chart here. -->
+        </div>
+      </div>
+      </div>
+    </div>
+    <svg width="1200" height="1200"></svg>
+    <script type="text/javascript" src="static/js/circlepack.js"></script>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div class="article">
+          <h2>Language in the Shapes</h2>
+          <p>The mechanics of the Circle map involves an in-depth scrape of the commentary taken from actual UFO reports
+             whereas an extract on key word groupings coupled with a base count.  As you Zoom into each circle, the type 
+             of sighting appears with the remaining text taken from each UFO report. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="/static/js/circlepack.js"></script>
+
+</body>
+</html>
+
+

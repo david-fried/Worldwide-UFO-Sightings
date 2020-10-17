@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>D3Times</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Interesting Observations
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarNavDropdown">
+                <a class="dropdown-item" href="../heat_map/index.html" target="_blank">Sighting Heat Map</a>
+                <a class="dropdown-item" href="../drugs/index.html" target="_blank">Sightings and Drugs</a>
+                <a class="dropdown-item" href="../d3/index.html" target="_blank">Fireball Sightings and Drugs</a>
+                <!-- <a class="dropdown-item" href="INSERT VISUALIZATION HTML FILE" target="_blank">insert visualization here</a> -->
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../explore_data/index.html" target="_blank">Explore the Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="api/app.py" target="_blank">API</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>UFO Chasers</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div class="chart"> 
+        <div id="scatter">
+          <!-- We append our chart here. -->
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div class="article">
+          <h2>Lower Incomes Correlate with Higher Rates of Obesity, Smoking, and Inadequate Healthcare</h2>
+          <p>The lower one's income, the higher one's likelihood of poor health. Data shows that individuals with lower 
+            incomes have higher rates of obesity and nicotine consumption. Although Americans with lower 
+            income lack healthy habits more often, they also have less access to the healthcare they need.
+          </p>
+
+          <p>Explore the above data visualization to discover correlations between health, age, income, and more.
+            The scatter points display detailed data by state.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <div id="footer">
+    <p>The Coding Boot Camp&copy;2016</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+</html>
