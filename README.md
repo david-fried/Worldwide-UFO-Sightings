@@ -140,13 +140,12 @@ Other visualizations included a scatterplot illustrating the relationships betwe
 
 ## Team Members
 
+- Gianni Adamo
 - B. Daves
 - Eric Donnelly
 - Shelly Fischer
 - David Fried
 - Chioma Maduko
-- Gianni Adamo
-
 
 ## Rock on!
 
