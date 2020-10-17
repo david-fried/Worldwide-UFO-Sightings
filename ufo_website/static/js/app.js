@@ -174,7 +174,7 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
   return circlesGroup;
 }
 
-// Retrieve data from the CSV file and execute everything below
+// Retrieve data from the SQL database and execute everything below
 d3.json("http://127.0.0.1:5000/d3data").then(function(ufoData, err) {
   if (err) throw err;
 

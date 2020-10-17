@@ -3,12 +3,14 @@
 ![musk](images/musk.jpg)
 
 ## Overview
-This website displays information about UFO sightings occuring between the years 1906 and 2014. Information on each sighting includes the time and date, location, shape, duration, and geographic coordinates.
+This website displays information about UFO sightings occurring in North America between the years 1906 and 2014. For each sighting, information was reported on the time and date, shape, duration, and location including the state, city, and geographical coordinates (latitude and longitude).
 
 ## Website Design
 
-### Backend
-The website runs on a Python Flask app. With the exception of the circle-packing visualization and the bar chart, data for visualizations are served through the Flask app from several tables in a SQLite database. The SQLite database was created from CSV files gathered from several sources.
+### Back End
+The website runs on a Python Flask application. With the exception of the circle-packing visualization and the bar chart, visualizations were supplied with data from API calls to the SQLite database. The SQLite database was created from CSV files with the Python SQLite3 library after being munged with Python Pandas. In Flask, the database tables were queried with SQL Alchemy.
+
+Below is a code snippet from the Flask file ('app.py').
 
                 # creating a SQL Alchemy ORM
                 engine = create_engine("sqlite:///database/database.sqlite")
@@ -72,8 +74,10 @@ The website runs on a Python Flask app. With the exception of the circle-packing
                 return data
 
 
-### Frontend
-Data from the API calls to the SQL database made by the Flask APP are then sent to JavaScript files. Together, Javascript, HTML, and CSS were used to produce the visualizations, which were created using Leaflet and D3 libraries.
+### Front End
+Data from Flask API calls to the SQL database were sent to JavaScript files, which interacted with HTML and CSS files to produce visualizations. Each visualization was created using a JavaScript Leaflet or D3 library.
+
+Below is a code snippet from the javascript file used to produce the scatterplot ('static/js/app.js') in conjunction with the corresponding html ('d3.html') and CSS files: 'static/css/d3style', 'static/css/d3style1', and 'static/css/d3style2.'
 
                 // Retrieve data from the SQL database and execute everything below
                 d3.json("http://127.0.0.1:5000/d3data").then(function(ufoData, err) {
@@ -112,23 +116,37 @@ A heatmap was created using JS Leaflet to display the locations of sightings thr
 
 ### Map of UFO Sightings and Drug Deaths
 
-It was hypothesized that areas with heavier drug users would have more sightings. The Leaflet map below illustrates the relationship between the number of deaths from illicit substances reported for each state and the number of reported sightings in January and February of 2014.
+It was hypothesized that areas with heavier drug users would have more sightings. The JS Leaflet map below illustrates the relationship between the number of deaths from illicit substances reported for each state and the number of reported sightings in January and February of 2014.
 
 ![drug deaths](images/drug_deaths.png)
 
 
 ### Visualization of Word Assocations and UFO Shapes
 
-Using R and D3, a visualization was created from comments from individuals reporting sightings. This interactive circle-packing map shows the associations between particular phrases and types of shapes reported. For example, individuals who reported seeing UFO shapes resembling fireballs were more likely to use descriptive words associated with light and heat such as *glowing*, *pulsating*, *orange*, etc.
+Using R and D3, a visualization was created from comments from individuals reporting sightings. The interactive circle-packing map below shows associations between types of UFO shapes reported and phrases in the reported commentary. For example, individuals who reported seeing UFO shapes resembling fireballs were more likely to use descriptive words associated with light and heat such as *glowing*, *pulsating*, *orange*, etc.
 
 ![circle packing](images/circle_packing.png)
 
 ### Scatterplot of UFO Shapes and Drug Use
 
-Other visualizations included a scatterplot illustrating the relationships between UFO shapes and drug use, and a barchart showing sighting shape frequencies by state. Both visualizations were created using JS D3.
+Other visualizations included a scatterplot illustrating the relationships between UFO shapes and drug deaths, and a barchart showing sighting shape frequencies by state. Both visualizations were created using JavaScript D3.
 
 ![scatter plot](images/scatter_plot.png)
 
 ### Barchart of Sighting Shape Frequencies by State
 
 ![barchart](images/bar_chart.png)
+
+
+## Team Members
+
+- B. Daves
+- Eric Donnelly
+- Shelly Fischer
+- David Fried
+- Chioma Maduko
+
+
+## Rock on!
+
+![bowie](images/bowie.jpg)
