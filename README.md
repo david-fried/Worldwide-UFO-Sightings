@@ -8,7 +8,7 @@ This website displays information about UFO sightings occurring in North America
 ## Website Design
 
 ### Back End
-The website runs on a Python Flask application. With the exception of the circle-packing visualization and the bar chart, visualizations were supplied with data from API calls to the SQLite database. The SQLite database was created from CSV files with the Python SQLite3 library after being munged with Python Pandas. In Flask, the database tables were queried with SQL Alchemy.
+The website runs on a Python Flask application. With the exception of the circle-packing visualization and the bar chart, visualizations were supplied with data from Flask API calls to our SQLite database. The SQLite database was created from CSV files with the Python SQLite3 library after being munged with Python Pandas. In Flask, the database tables were queried with SQL Alchemy.
 
 Below is a code snippet from the Flask file ('app.py').
 
@@ -77,7 +77,7 @@ Below is a code snippet from the Flask file ('app.py').
 ### Front End
 Data from Flask API calls to the SQL database were sent to JavaScript files, which interacted with HTML and CSS files to produce visualizations. Each visualization was created using a JavaScript Leaflet or D3 library.
 
-Below is a code snippet from the javascript file used to produce the scatterplot ('static/js/app.js') in conjunction with the corresponding html ('d3.html') and CSS files: 'static/css/d3style', 'static/css/d3style1', and 'static/css/d3style2.'
+Below is a code snippet from the JavaScript file used to produce the scatterplot ('static/js/app.js') in conjunction with the corresponding html ('d3.html') and CSS files: 'static/css/d3style', 'static/css/d3style1', and 'static/css/d3style2.'
 
                 // Retrieve data from the SQL database and execute everything below
                 d3.json("http://127.0.0.1:5000/d3data").then(function(ufoData, err) {
